@@ -6,7 +6,7 @@ export const requestDishes = () => ({
 
 export const requestDishesSuccess = (json) => ({
 	type: REQUEST_DISHES_SUCCESS,
-	dishesList: json.results
+	dishList: json.results
 })
 
 export const requestDishesEror = (error) => ({
@@ -15,7 +15,7 @@ export const requestDishesEror = (error) => ({
 })
 
 export const selectDish = (dish) => ({
-  type: types.SELECT_DISH,
+  type: SELECT_DISH,
   dish
 })
 

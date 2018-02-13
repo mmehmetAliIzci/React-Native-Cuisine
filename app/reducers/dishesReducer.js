@@ -3,7 +3,7 @@ import {REQUEST_DISHES,REQUEST_DISHES_SUCCESS,REQUEST_DISHES_FAILURE,SELECT_DISH
 const INITIAL_EVENT_STATE = {
 	selectedDish: {},
 	error : null,
-	dishesList: [],
+	dishList: [],
 	isFetching: false
 }
 
@@ -18,7 +18,7 @@ export default function eventReducer(state = INITIAL_EVENT_STATE, action){
 			return {
 				...state,
 				isFetching: false,
-				dishesList: action.dishesList
+				dishList: action.dishList
 			}
 		case REQUEST_DISHES_FAILURE:
 			return {
