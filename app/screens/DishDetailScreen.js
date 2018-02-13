@@ -6,13 +6,14 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as actions from '../actions/dishesActions';
 
+import DishDetail from '../components/DishDetail'
 
-class DishList extends Component {
+class DishDetailScreen extends Component {
 
   render() {
-    debugger;
+
     return (
-      <Text>{this.props.Dishes.selectedDish.phone}</Text>
+      <DishDetail dish={this.props.Dishes.selectedDish}/>
     );
   }
 
@@ -34,4 +35,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(DishList);
+)(DishDetailScreen);
