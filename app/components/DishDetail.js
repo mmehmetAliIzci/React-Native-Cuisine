@@ -16,7 +16,7 @@ export default class Movie extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.boxContainer, styles.imageContainer}>
-          <Image source={{uri: dish.image}}/>
+          <Image style={{width: '100%',height:'75%'}} source={{uri: dish.image}}/>
         </View>
         <View>
           <Text>{dish.name}</Text>
