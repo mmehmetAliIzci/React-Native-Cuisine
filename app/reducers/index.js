@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-
+import Dishes from './dishesReducer'
 
 
 
 const rootReducer = combineReducers({
-  
+  Dishes,
 
 });
 
