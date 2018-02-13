@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux'
-import DishesList from './containers/DishesList'
+import { Root } from './config/router'
 
 import { createStore, applyMiddleware,compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
@@ -21,18 +21,8 @@ export default class App extends React.Component {
   render() {
     return (
           <Provider store={store}>
-              <DishesList/>
+              <Root/>
           </Provider>
       );
   }
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     margin: 10,
-//     justifyContent: 'center',
-//   },
-// });
