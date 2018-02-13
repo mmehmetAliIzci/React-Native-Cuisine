@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as actions from '../actions/dishesActions';
 
+import DishItem from '../components/DishItem'
 
 class DishList extends Component {
   constructor(props) {
@@ -24,32 +25,6 @@ class DishList extends Component {
   componentDidMount() {
     this.props.actions.fetchDishes();
   }
-
-
-  handleRefresh = () => {
-    // this.setState(
-    //   {
-    //     page: 1,
-    //     seed: this.state.seed + 1,
-    //     refreshing: true
-    //   },
-    //   () => {
-    //     this.makeRemoteRequest();
-    //   }
-    // );
-    // this.props.actions.fetchDishes();
-  };
-
-  handleLoadMore = () => {
-    this.setState(
-      {
-        page: this.state.page + 1
-      },
-      () => {
-        // this.makeRemoteRequest();
-      }
-    );
-  };
 
   renderSeparator = () => {
     return (
@@ -73,55 +48,30 @@ class DishList extends Component {
     this.props.navigation.navigate('Details')
   }
 
-  renderFooter = () => {
-    if (!this.state.loading) return null;
-
+  _renderRow = (dish) => {
     return (
-      <View
-        style={{
-          paddingVertical: 20,
-          borderTopWidth: 1,
-          borderColor: "#CED0CE"
-        }}
-      >
-        <ActivityIndicator animating size="large" />
-      </View>
-    );
-  };
+      <DishItem
+        dish={dish}
+        onPress={() => this.goToDetails(dish)}
+      />
+    )
+  }
 
   render() {
 
     return (
-      <List containerStyle={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
-        { this.props.Dishes.isFetching &&
-          <Text>Loading..</Text>
+      <List containerStyle={{ borderTopWidth: 0, borderBottomWidth: 0 ,flex:1  }}>
+        { this.props.Dishes.isFetching ?
+          <Text>Loading..</Text> :
+          <FlatList
+            data={this.props.Dishes.dishList}
+            renderItem={({ item }) => (this._renderRow(item))}
+            keyExtractor={item => item.id}
+            ItemSeparatorComponent={this.renderSeparator}
+            ListHeaderComponent={this.renderHeader}
+            refreshing={this.state.refreshing}
+          />
         }
-        {/* { this.props.Dishes.dishList.length > 0 ?
-          <Text>We have data</Text> :
-          <Text>We Dont have data</Text>
-
-        } */}
-        <FlatList
-          data={this.props.Dishes.dishList}
-          renderItem={({ item }) => (
-            <ListItem
-              roundAvatar
-              title={`${item.name.first} ${item.name.last}`}
-              subtitle={item.email}
-              avatar={{ uri: item.picture.thumbnail }}
-              containerStyle={{ borderBottomWidth: 0 }}
-              onPress={() => this.goToDetails(item)}
-            />
-          )}
-          keyExtractor={item => item.email}
-          ItemSeparatorComponent={this.renderSeparator}
-          ListHeaderComponent={this.renderHeader}
-          ListFooterComponent={this.renderFooter}
-          onRefresh={this.handleRefresh}
-          refreshing={this.state.refreshing}
-          onEndReached={this.handleLoadMore}
-          onEndReachedThreshold={50}
-        />
       </List>
     );
   }
