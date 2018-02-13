@@ -1,5 +1,5 @@
 import {REQUEST_DISHES,REQUEST_DISHES_SUCCESS,REQUEST_DISHES_FAILURE,SELECT_DISH} from '../constants/actionTypes';
-
+import mock from '../mock.json'
 export const requestDishes = () => ({
 	type: REQUEST_DISHES
 })
@@ -24,7 +24,7 @@ export function fetchDishes (){
 		dispatch(requestDishes())
 		fetch(`https://randomuser.me/api/?results=20`)
 		.then(response => response.json())
-		.then(json => dispatch(requestDishesSuccess(json)))
+		.then(json => dispatch(requestDishesSuccess(mock)))
 		.catch((error) => {
 			dispatch(requestDishesEror(error))
 		})
