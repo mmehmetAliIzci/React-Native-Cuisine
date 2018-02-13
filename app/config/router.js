@@ -3,7 +3,7 @@ import { StackNavigator } from 'react-navigation';
 
 
 import DishList from '../screens/DishList';
-import DishDetail from '../screens/DishDetail'
+import DishDetailScreen from '../screens/DishDetailScreen'
 
 export const Root = StackNavigator({
   List: {
@@ -13,7 +13,7 @@ export const Root = StackNavigator({
     },
   },
   Details: {
-    screen: DishDetail,
+    screen: DishDetailScreen,
     navigationOptions:{
       title: 'Details',
     },
