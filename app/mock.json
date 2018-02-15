@@ -2,38 +2,42 @@
   "results":[
     {
       "id": "1",
-      "ingredients": ["2 tbsp olive oil","2 onions","1 red or green pepper","1-2 red chillies","400g tomatoes","1-2 tsp sugar","4 eggs","small bunch parsley","6 tbsp thick, creamy yogurt","2 garlic cloves"],
-      "healthLabels": ["Vegetarian","Gluten-free"],
+      "ingredients": [{"amount":"2 tbsp", "ingredientName": "olive oil"},{"amount":"2","ingredientName":"onions"},{"amount":"1","ingredientName":"red or green pepper"},{"amount":"1-2","ingredientName":"red chillies"},{"amount":"400g","ingredientName":"tomatoes"},{"amount":"1-2 tsp","ingredientName":"sugar"},{"amount":"4","ingredientName":"eggs"}],
+      "healthLabels": ["Vegetarian","Gluten-free","Light"],
       "person": 4,
+      "publicationDate": "2018-01-21T15:00:00.000000Z",
       "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201531_11.jpg?itok=QNKZ0YKw",
       "name": "Menemen",
       "method": ["Heat the oil in a heavy-based frying pan. Stir in the onions, pepper and chillies. Cook until they begin to soften. Add the tomatoes and sugar, mixing well. Cook until the liquid has reduced, season.", "Using a wooden spoon, create 4 pockets in the tomato mixture and crack the eggs into them. Cover the pan and cook the eggs over a low heat until just set.","Beat the yogurt with the garlic and season. Sprinkle the menemen with parsley and serve from the frying pan with a dollop of the garlic-flavoured yogurt."]
     },
     {
       "id": "2",
-      "ingredients": ["2 tbsp olive oil","2 onions","1 red or green pepper","1-2 red chillies","400g tomatoes","1-2 tsp sugar","4 eggs","small bunch parsley","6 tbsp thick, creamy yogurt","2 garlic cloves"],
+      "ingredients": [{"amount":"2 tbsp", "ingredientName": "olive oil"},{"amount":"2","ingredientName":"onions"},{"amount":"1","ingredientName":"red or green pepper"},{"amount":"1-2","ingredientName":"red chillies"},{"amount":"400g","ingredientName":"tomatoes"},{"amount":"1-2 tsp","ingredientName":"sugar"},{"amount":"4","ingredientName":"eggs"}],
       "healthLabels": ["Vegetarian","Gluten-free"],
       "person": 4,
+      "publicationDate": "2018-01-22T15:00:00.000000Z",
       "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201531_11.jpg?itok=QNKZ0YKw",
-      "name": "Menemen",
+      "name": "Menemen@",
       "method": ["Heat the oil in a heavy-based frying pan. Stir in the onions, pepper and chillies. Cook until they begin to soften. Add the tomatoes and sugar, mixing well. Cook until the liquid has reduced, season.", "Using a wooden spoon, create 4 pockets in the tomato mixture and crack the eggs into them. Cover the pan and cook the eggs over a low heat until just set.","Beat the yogurt with the garlic and season. Sprinkle the menemen with parsley and serve from the frying pan with a dollop of the garlic-flavoured yogurt."]
     },
     {
       "id": "3",
-      "ingredients": ["2 tbsp olive oil","2 onions","1 red or green pepper","1-2 red chillies","400g tomatoes","1-2 tsp sugar","4 eggs","small bunch parsley","6 tbsp thick, creamy yogurt","2 garlic cloves"],
+      "ingredients": [{"amount":"2 tbsp", "ingredientName": "olive oil"},{"amount":"2","ingredientName":"onions"},{"amount":"1","ingredientName":"red or green pepper"},{"amount":"1-2","ingredientName":"red chillies"},{"amount":"400g","ingredientName":"tomatoes"},{"amount":"1-2 tsp","ingredientName":"sugar"},{"amount":"4","ingredientName":"eggs"}],
       "healthLabels": ["Vegetarian","Gluten-free"],
       "person": 4,
+      "publicationDate": "2018-01-23T15:00:00.000000Z",
       "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201531_11.jpg?itok=QNKZ0YKw",
-      "name": "Menemen",
+      "name": "Menemen!",
       "method": ["Heat the oil in a heavy-based frying pan. Stir in the onions, pepper and chillies. Cook until they begin to soften. Add the tomatoes and sugar, mixing well. Cook until the liquid has reduced, season.", "Using a wooden spoon, create 4 pockets in the tomato mixture and crack the eggs into them. Cover the pan and cook the eggs over a low heat until just set.","Beat the yogurt with the garlic and season. Sprinkle the menemen with parsley and serve from the frying pan with a dollop of the garlic-flavoured yogurt."]
     },
     {
       "id": "4",
-      "ingredients": ["2 tbsp olive oil","2 onions","1 red or green pepper","1-2 red chillies","400g tomatoes","1-2 tsp sugar","4 eggs","small bunch parsley","6 tbsp thick, creamy yogurt","2 garlic cloves"],
+      "ingredients": [{"amount":"2 tbsp", "ingredientName": "olive oil"},{"amount":"2","ingredientName":"onions"},{"amount":"1","ingredientName":"red or green pepper"},{"amount":"1-2","ingredientName":"red chillies"},{"amount":"400g","ingredientName":"tomatoes"},{"amount":"1-2 tsp","ingredientName":"sugar"},{"amount":"4","ingredientName":"eggs"}],
       "healthLabels": ["Vegetarian","Gluten-free"],
       "person": 4,
+      "publicationDate": "2018-01-24T15:00:00.000000Z",
       "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201531_11.jpg?itok=QNKZ0YKw",
-      "name": "Menemen",
+      "name": "Menemen!!",
       "method": ["Heat the oil in a heavy-based frying pan. Stir in the onions, pepper and chillies. Cook until they begin to soften. Add the tomatoes and sugar, mixing well. Cook until the liquid has reduced, season.", "Using a wooden spoon, create 4 pockets in the tomato mixture and crack the eggs into them. Cover the pan and cook the eggs over a low heat until just set.","Beat the yogurt with the garlic and season. Sprinkle the menemen with parsley and serve from the frying pan with a dollop of the garlic-flavoured yogurt."]
     }
 
