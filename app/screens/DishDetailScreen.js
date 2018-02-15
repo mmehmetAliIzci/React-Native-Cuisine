@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as actions from '../actions/dishesActions';
 
-import DishDetail from '../components/DishDetail'
+import DishDetail from '../containers/DishDetail'
 
 class DishDetailScreen extends Component {
 
