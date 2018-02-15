@@ -28,7 +28,8 @@ class DishList extends Component {
   }
 
   _onPressSort = () => {
-    console.log('Yoo')
+    let arrayToSort = [...this.props.Dishes.dishList]
+    this.props.actions.updateFilteredList(utils.sortDishes(arrayToSort))
   }
 
   goToDetails = (dish) => {
