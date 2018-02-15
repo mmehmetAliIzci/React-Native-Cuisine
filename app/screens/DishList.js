@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, FlatList, ActivityIndicator,TouchableOpacity,StyleSheet } from "react-native";
-import { List, ListItem, SearchBar } from "react-native-elements";
-import { MaterialIcons } from '@expo/vector-icons';
+import { List, ListItem } from "react-native-elements";
+
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -9,6 +9,7 @@ import * as actions from '../actions/dishesActions';
 
 import DishItem from '../components/DishItem'
 import ListSeperator from '../components/ListSeperator'
+import SearchAndFilterBar from '../components/SearchAndFilterBar'
 import * as utils from '../utils'
 
 class DishList extends Component {
@@ -18,7 +19,7 @@ class DishList extends Component {
   }
 
 
-  _handleResults = (filterText) => {
+  _onChangeText = (filterText) => {
     let filteredList = [...this.props.Dishes.dishList]
     if (filterText) {
       filteredList = utils.searchDish(filterText,filteredList)
@@ -26,6 +27,9 @@ class DishList extends Component {
     this.props.actions.updateFilteredList(filteredList);
   }
 
+  _onPressSort = () => {
+    console.log('Yoo')
+  }
 
   goToDetails = (dish) => {
     this.props.actions.selectDish(dish)
@@ -51,35 +55,15 @@ class DishList extends Component {
           </View>
           :
           <View style={styles.MainContainer}>
-            <View style={styles.HeaderContainer}>
-              <View style={styles.SearchBarContainer}>
-                <SearchBar
-                  style={styles.SearchBar}
-                  onChangeText={this._handleResults}
-                  placeholder="Type Here..."
-                  lightTheme
-                  round
-                  showOnLoad
-                />
-              </View>
-              <View style={styles.FilterContainer}>
-                <TouchableOpacity
-                  // onPress={}
-                  activeOpacity={0.7}
-                  style={styles.FilterButton}
-                  >
-                    <MaterialIcons name="sort-by-alpha" size={32} color="rgb(0,122,255)" />
-                  </TouchableOpacity>
-                </View>
-              </View>
-              <View style={styles.ListContainer}>
-                <FlatList
-                  data={this.props.Dishes.filteredList}
-                  renderItem={({ item }) => (this._renderRow(item))}
-                  keyExtractor={item => item.id}
-                  ItemSeparatorComponent={() => <ListSeperator/>}
-                />
-              </View>
+            <SearchAndFilterBar onPressSort={this._onPressSort} onChangeText={this._onChangeText} />
+            <View style={styles.ListContainer}>
+              <FlatList
+                data={this.props.Dishes.filteredList}
+                renderItem={({ item }) => (this._renderRow(item))}
+                keyExtractor={item => item.id}
+                ItemSeparatorComponent={() => <ListSeperator/>}
+              />
+            </View>
           </View>
         }
       </View>
@@ -111,29 +95,6 @@ const styles = StyleSheet.create ({
   MainContainer: {
     flex:1,
     flexDirection: 'column'
-  },
-  HeaderContainer:{
-    flexDirection: 'row'
-  },
-  SearchBarContainer:{
-    flex: 5
-  },
-  SearchBar: {
-    backgroundColor: "rgb(255,255,255)"
-  },
-  FilterContainer:{
-    flex: 1,
-    justifyContent: 'center',
-    paddingRight: 5
-  },
-  FilterButton:{
-    backgroundColor: "#F3F1F0",
-    height: 'auto',
-    borderColor: "transparent",
-    borderWidth: 0,
-    borderRadius: 5,
-    justifyContent: 'center',
-    alignItems: 'center'
   },
   ListContainer:{
     flex:1
