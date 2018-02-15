@@ -1,4 +1,4 @@
-import {REQUEST_DISHES,REQUEST_DISHES_SUCCESS,REQUEST_DISHES_FAILURE,SELECT_DISH} from '../constants/actionTypes';
+import {REQUEST_DISHES,REQUEST_DISHES_SUCCESS,REQUEST_DISHES_FAILURE,SELECT_DISH, UPDATE_FILTERED_LIST} from '../constants/actionTypes';
 import mock from '../mock.json'
 export const requestDishes = () => ({
 	type: REQUEST_DISHES
@@ -12,6 +12,11 @@ export const requestDishesSuccess = (json) => ({
 export const requestDishesEror = (error) => ({
 	type: REQUEST_DISHES_FAILURE,
 	error
+})
+
+export const updateFilteredList = ( results ) => ({
+	type: UPDATE_FILTERED_LIST,
+	dishList: results
 })
 
 export const selectDish = (dish) => ({

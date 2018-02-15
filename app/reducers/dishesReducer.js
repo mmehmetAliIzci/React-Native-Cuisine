@@ -1,9 +1,10 @@
-import {REQUEST_DISHES,REQUEST_DISHES_SUCCESS,REQUEST_DISHES_FAILURE,SELECT_DISH} from '../constants/actionTypes';
+import {REQUEST_DISHES,REQUEST_DISHES_SUCCESS,REQUEST_DISHES_FAILURE,SELECT_DISH,UPDATE_FILTERED_LIST} from '../constants/actionTypes';
 
 const INITIAL_EVENT_STATE = {
 	selectedDish: {},
 	error : null,
 	dishList: [],
+	filteredList: [],
 	isFetching: false
 }
 
@@ -18,7 +19,13 @@ export default function eventReducer(state = INITIAL_EVENT_STATE, action){
 			return {
 				...state,
 				isFetching: false,
-				dishList: action.dishList
+				dishList: action.dishList,
+				filteredList: action.dishList
+			}
+		case UPDATE_FILTERED_LIST:
+			return {
+				...state,
+				filteredList: action.dishList
 			}
 		case REQUEST_DISHES_FAILURE:
 			return {

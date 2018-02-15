@@ -9,7 +9,7 @@ export const Root = StackNavigator({
   List: {
     screen: DishList,
     navigationOptions: {
-      title: 'Dishes',
+      title: 'Dishes'
     },
   },
   Details: {
