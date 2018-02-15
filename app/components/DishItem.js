@@ -8,6 +8,7 @@ import {
   View                // Container component
 } from 'react-native';
 import Dimensions from 'Dimensions';
+import TextWithFont from './TextWithFont'
 
 // Detect screen size to calculate row height
 const screen = Dimensions.get('window');
@@ -31,7 +32,9 @@ export default class Row extends Component {
         {/* Background image */}
         <ImageBackground source={{uri: image}} style={styles.imageBackground}>
           {/* Title */}
-          <Text style={[styles.text, styles.title]}>{name.toUpperCase()}</Text>
+          <TextWithFont>
+            <Text style={[styles.text, styles.title]}>{name.toUpperCase()}</Text>
+          </TextWithFont>
           {/* Rating */}
           <View style={styles.rating}>
             {/* Icon */}
@@ -40,7 +43,9 @@ export default class Row extends Component {
               style={styles.icon}
             />
             {/* Value */}
-            <Text style={[styles.text, styles.value]}>{person}</Text>
+            <TextWithFont>
+              <Text style={[styles.text, styles.value]}>{person}</Text>
+            </TextWithFont>
           </View>
         </ImageBackground>
       </TouchableOpacity>
@@ -64,7 +69,6 @@ const styles = StyleSheet.create({
   text: {
     color: '#fff',                      // White text color
     backgroundColor: 'transparent',     // No background
-    fontFamily: 'Avenir',               // Change default font
     fontWeight: 'bold',                 // Bold font
     // Add text shadow
     textShadowColor: '#222',
