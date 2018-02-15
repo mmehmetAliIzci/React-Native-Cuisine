@@ -36,17 +36,6 @@ export default class Row extends Component {
             <Text style={[styles.text, styles.title]}>{name.toUpperCase()}</Text>
           </TextWithFont>
           {/* Rating */}
-          <View style={styles.rating}>
-            {/* Icon */}
-            <Image
-              source={{uri: 'https://staticv2.rottentomatoes.com/static/images/icons/cf-lg.png'}}
-              style={styles.icon}
-            />
-            {/* Value */}
-            <TextWithFont>
-              <Text style={[styles.text, styles.value]}>{person}</Text>
-            </TextWithFont>
-          </View>
         </ImageBackground>
       </TouchableOpacity>
     );
@@ -77,17 +66,7 @@ const styles = StyleSheet.create({
   },
   // Movie title
   title: {
-    fontSize: 22,                       // Bigger font size
-  },
-  // Rating row
-  rating: {
-    flexDirection: 'row',               // Arrange icon and rating in one line
-  },
-  // Certified fresh icon
-  icon: {
-    width: 22,                          // Set width
-    height: 22,                         // Set height
-    marginRight: 5,                     // Add some margin between icon and rating
+    fontSize: 33,                       // Bigger font size
   },
   // Rating value
   value: {
