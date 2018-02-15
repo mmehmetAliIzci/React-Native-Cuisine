@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { View, Text, FlatList, ActivityIndicator } from "react-native";
+import { View, Text, FlatList, ActivityIndicator,TouchableOpacity,StyleSheet } from "react-native";
 import { List, ListItem, SearchBar } from "react-native-elements";
+import { MaterialIcons } from '@expo/vector-icons';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as actions from '../actions/dishesActions';
 
 import DishItem from '../components/DishItem'
+import ListSeperator from '../components/ListSeperator'
 import * as utils from '../utils'
 
 class DishList extends Component {
@@ -15,18 +17,6 @@ class DishList extends Component {
     this.props.actions.fetchDishes();
   }
 
-  renderSeparator = () => {
-    return (
-      <View
-        style={{
-          height: 1,
-          width: "86%",
-          backgroundColor: "#CED0CE",
-          marginLeft: "14%"
-        }}
-      />
-    );
-  };
 
   _handleResults = (filterText) => {
     let filteredList = [...this.props.Dishes.dishList]
