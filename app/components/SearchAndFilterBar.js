@@ -5,12 +5,9 @@ import {
   View                // Container component
 } from 'react-native';
 import { SearchBar } from "react-native-elements";
-import Dimensions from 'Dimensions';
-import TextWithFont from './TextWithFont'
 import { MaterialIcons } from '@expo/vector-icons';
-
+import {COLOR_PRIMARY} from '../styles/globalStyles'
 // Detect screen size to calculate row height
-const screen = Dimensions.get('window');
 
 export default class SearchAndFilterBar extends Component {
 
@@ -37,7 +34,7 @@ export default class SearchAndFilterBar extends Component {
             onPress={onPressSort}
             style={styles.FilterButton}
             >
-              <MaterialIcons name="sort-by-alpha" size={32} color="rgb(0,122,255)" />
+              <MaterialIcons name="sort-by-alpha" size={32} color={COLOR_PRIMARY} />
           </TouchableOpacity>
         </View>
       </View>
