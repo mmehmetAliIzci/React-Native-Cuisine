@@ -18,8 +18,8 @@ export default class DishLabels extends Component {
       case "Vegetarian":
         iconName = "flower"
         break;
-      case "Light":
-        iconName = "feather"
+      case "Healthy":
+        iconName = "heart"
         break;
       case "Gluten-free":
         iconName = "block"
@@ -28,10 +28,10 @@ export default class DishLabels extends Component {
         iconName = "check"
     }
     return (
-      <View>
-        <Entypo name={iconName} size={32} color={COLOR_SECONDARY} />
+      <View style={styles.labelBoxWrapper}>
+        <Entypo name={iconName} size={32} color={COLOR_SECONDARY} key={labelText}/>
         <TextWithFont>
-          <Text style={styles.labelText}> {labelText}</Text>
+          {labelText}
         </TextWithFont>
       </View>
     )
@@ -44,13 +44,21 @@ export default class DishLabels extends Component {
 
     return (
       // Row press handler
-      <View style={styles.labelsWrapper}>
-        <SectionHeading text="Labels"/>
-        <TextWithFont>
-          <Text><Entypo name="bowl" size={32} color={COLOR_SECONDARY} /> {dish.person}</Text>
-        </TextWithFont>
-        {dish.healthLabels.map(this.mapLabelsToIcons)}
+      <View>
+        <View>
+          <SectionHeading text="Labels"/>
+        </View>
+        <View style={styles.labelsWrapper}>
+          <View style={styles.labelBoxWrapper}>
+            <Entypo name="bowl" size={32} color={COLOR_SECONDARY} />
+            <TextWithFont>
+              {dish.person} Person
+            </TextWithFont>
+          </View>
+          {dish.healthLabels.map(this.mapLabelsToIcons)}
+        </View>
       </View>
+
 
     );
   }
@@ -63,7 +71,11 @@ const styles = StyleSheet.create({
   },
   labelsWrapper:{
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     alignItems: 'center',
   },
+  labelBoxWrapper:{
+    flexDirection: 'column',
+    alignItems: 'center',
+  }
 });

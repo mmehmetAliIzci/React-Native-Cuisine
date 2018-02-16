@@ -63,6 +63,11 @@ const styles = StyleSheet.create({
   dishName:{
     fontSize: 44,
     color: "white",
-    paddingLeft: 30
+    paddingLeft: 30,
+    fontWeight: 'bold',                 // Bold font
+    // Add text shadow
+    textShadowColor: '#222',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 4,
   },
 });

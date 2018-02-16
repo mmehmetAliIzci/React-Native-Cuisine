@@ -12,7 +12,7 @@ export default class DishIngredients extends Component {
   mapIngredients = (ingredientObj) => {
 
     return (
-      <View style={styles.ingredientRow}>
+      <View style={styles.ingredientRow} key={ingredientObj.ingredientName}>
         <View style={styles.ingredientAmount}>
           <TextWithFont>
             {ingredientObj.amount}
