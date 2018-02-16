@@ -1,3 +1,8 @@
+/**
+ * Responsible for rendering Seperator between List
+ * Doesnt Accepts any props
+ */
+
 import React, { Component } from 'react';
 import {
   View                // Container component

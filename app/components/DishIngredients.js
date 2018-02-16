@@ -1,16 +1,23 @@
+/**
+ * Responsible for Rendering Ingredients Section in DishDetailScreen
+ */
+
 import React, { Component } from 'react';
 import {
-  StyleSheet,         // CSS-like styles
-  View                // Container component
+  StyleSheet,
+  View
 } from 'react-native';
 import SectionHeading from "./SectionHeading"
 import TextWithFont from './TextWithFont'
-// Detect screen size to calculate row height
+
 
 export default class DishIngredients extends Component {
 
-  mapIngredients = (ingredientObj) => {
 
+  /**
+   * Responsible for mapping Ingredients to => LIST ROW
+   */
+  mapIngredients = (ingredientObj) => {
     return (
       <View style={styles.ingredientRow} key={ingredientObj.ingredientName}>
         <View style={styles.ingredientAmount}>
@@ -28,12 +35,8 @@ export default class DishIngredients extends Component {
   }
 
 
-  // Extract onChangeText and onPressFilter props passed from List component
   render({ ingredients} = this.props) {
-    // Extract values from dish object
-
     return (
-      // Row press handler
       <View>
         <SectionHeading text="Ingredients"/>
         {ingredients.map(this.mapIngredients)}

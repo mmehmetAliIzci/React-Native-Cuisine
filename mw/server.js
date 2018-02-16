@@ -1,3 +1,6 @@
+/**
+ * Responsible for handling server
+ */
 let express = require('express');
 let app = express();
 let path = require('path');

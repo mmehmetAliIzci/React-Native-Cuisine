@@ -1,11 +1,15 @@
+/**
+ * Responsible for Rendering single Row in Main Dish List
+ */
+
 import React, { Component } from 'react';
 import {
-  ImageBackground,              // Renders background image
+  ImageBackground,
   Image,
-  StyleSheet,         // CSS-like styles
-  Text,               // Renders text
-  TouchableOpacity,   // Handles row presses
-  View                // Container component
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
 } from 'react-native';
 import Dimensions from 'Dimensions';
 import TextWithFont from './TextWithFont'
@@ -13,7 +17,7 @@ import TextWithFont from './TextWithFont'
 // Detect screen size to calculate row height
 const screen = Dimensions.get('window');
 
-export default class Row extends Component {
+export default class DishListRow extends Component {
 
   // Extract dish and onPress props passed from List component
   render({ dish, onPress } = this.props) {
@@ -64,12 +68,8 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 4,
   },
-  // Movie title
+  // Row title
   title: {
     fontSize: 33,                       // Bigger font size
-  },
-  // Rating value
-  value: {
-    fontSize: 16,                       // Smaller font size
   },
 });

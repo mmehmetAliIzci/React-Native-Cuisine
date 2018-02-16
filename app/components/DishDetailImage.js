@@ -1,42 +1,25 @@
+/**
+ * Responsible for Rendering Image in DishDetail Screen
+ */
+
 import React, { Component } from 'react';
 import {
-  StyleSheet,         // CSS-like styles
+  StyleSheet,
   View     ,
   ImageBackground,
-  Text           // Container component
+  Text
 } from 'react-native';
 import TextWithFont from './TextWithFont'
 import Dimensions from 'Dimensions';
-// Detect screen size to calculate row height
+
 // Detect screen size to calculate row height
 const screen = Dimensions.get('window');
-export default class DishIngredients extends Component {
-
-  mapIngredients = (ingredientObj) => {
-
-    return (
-      <View style={styles.ingredientRow}>
-        <View style={styles.ingredientAmount}>
-          <TextWithFont>
-            {ingredientObj.amount}
-          </TextWithFont>
-        </View>
-        <View style={styles.ingredientName}>
-          <TextWithFont>
-            {ingredientObj.ingredientName}
-          </TextWithFont>
-        </View>
-      </View>
-    )
-  }
+export default class DishDetailImage extends Component {
 
 
-  // Extract onChangeText and onPressFilter props passed from List component
   render({ dish } = this.props) {
-    // Extract values from dish object
 
     return (
-      // Row press handler
       <View>
         <ImageBackground
           source={{uri: dish.image}}
@@ -64,7 +47,7 @@ const styles = StyleSheet.create({
     fontSize: 44,
     color: "white",
     paddingLeft: 30,
-    fontWeight: 'bold',                 // Bold font
+    fontWeight: 'bold',
     // Add text shadow
     textShadowColor: '#222',
     textShadowOffset: { width: 1, height: 1 },

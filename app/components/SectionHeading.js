@@ -1,6 +1,10 @@
+/**
+ * Responsible for rendering Customized TextWithFont for Section Headings
+ */
+
 import React, { Component } from 'react';
 import {
-  Text,                // Container component
+  Text,
   StyleSheet
 } from 'react-native';
 import TextWithFont from './TextWithFont'
@@ -17,7 +21,6 @@ export default class SectionHeading extends Component {
 
 
 const styles = StyleSheet.create({
-  // Row
   sectionHeading: {
     fontSize: 25
   }

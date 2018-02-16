@@ -1,3 +1,7 @@
+/**
+ * Responsible for rendering Dish Method in Detail Screen
+ */
+
 import React, { Component } from 'react';
 import {
   StyleSheet,         // CSS-like styles
@@ -9,9 +13,7 @@ import TextWithFont from './TextWithFont'
 
 export default class DishMethod extends Component {
 
-  // Extract onChangeText and onPressFilter props passed from List component
   render({ method } = this.props) {
-    // Extract values from dish object
     return (
       <View>
         <SectionHeading text="Preparation"/>

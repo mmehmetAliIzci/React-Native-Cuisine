@@ -1,17 +1,24 @@
+/**
+ * Responsible for Rendering Labels Section in DishDetailScreen
+ */
+
 import React, { Component } from 'react';
 import {
   StyleSheet,
-  Text,        // CSS-like styles
-  View                // Container component
+  Text,
+  View
 } from 'react-native';
 import SectionHeading from "./SectionHeading"
 import TextWithFont from './TextWithFont'
 import { Entypo } from '@expo/vector-icons';
 import {COLOR_SECONDARY} from '../styles/globalStyles'
-// Detect screen size to calculate row height
 
 export default class DishLabels extends Component {
 
+  /**
+   * Responsbile for Mapping labelTexts to icons and Eventually rendering as
+   * ICON - Text
+   */
   mapLabelsToIcons = (labelText) => {
     let iconName = ''
     switch (labelText) {
@@ -38,12 +45,9 @@ export default class DishLabels extends Component {
   }
 
 
-  // Extract onChangeText and onPressFilter props passed from List component
-  render({ dish} = this.props) {
-    // Extract values from dish object
 
+  render({ dish} = this.props) {
     return (
-      // Row press handler
       <View>
         <View>
           <SectionHeading text="Labels"/>
@@ -58,8 +62,6 @@ export default class DishLabels extends Component {
           {dish.healthLabels.map(this.mapLabelsToIcons)}
         </View>
       </View>
-
-
     );
   }
 

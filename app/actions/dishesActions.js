@@ -1,3 +1,7 @@
+/**
+ * Action Creator for Dish-Related Actions
+ */
+
 import {REQUEST_DISHES,REQUEST_DISHES_SUCCESS,REQUEST_DISHES_FAILURE,SELECT_DISH, UPDATE_FILTERED_LIST} from '../constants/actionTypes';
 import mock from '../mock.json'
 export const requestDishes = () => ({
@@ -35,6 +39,4 @@ export function fetchDishes (){
 			dispatch(requestDishesEror(error))
 		})
 	}
-}dispatch => {
-
 }

@@ -1,3 +1,7 @@
+/**
+ * Responsible for Rendering Globally styled (fontFamily) text
+ */
+
 import React, { Component } from 'react';
 import {
   Text,                // Container component
@@ -17,7 +21,6 @@ export default class TextWithFont extends Component {
 
 
 const styles = StyleSheet.create({
-  // Row
   styledText: {
     fontFamily: FONT_FAMILY
   }

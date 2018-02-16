@@ -1,3 +1,8 @@
+/**
+ * Responsible for rendering searchBar and SortButton
+ *
+ */
+
 import React, { Component } from 'react';
 import {
   StyleSheet,         // CSS-like styles
@@ -7,13 +12,12 @@ import {
 import { SearchBar } from "react-native-elements";
 import { MaterialIcons } from '@expo/vector-icons';
 import {COLOR_PRIMARY} from '../styles/globalStyles'
-// Detect screen size to calculate row height
 
 export default class SearchAndFilterBar extends Component {
 
-  // Extract onChangeText and onPressFilter props passed from List component
+  // Extract onChangeText and onPressSort props passed from List component
   render({ onChangeText, onPressSort } = this.props) {
-    // Extract values from dish object
+  
     return (
       // Row press handler
       <View style={styles.HeaderContainer}>
