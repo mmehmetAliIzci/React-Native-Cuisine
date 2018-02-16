@@ -27,7 +27,8 @@ export const selectDish = (dish) => ({
 export function fetchDishes (){
 	return (dispatch) => {
 		dispatch(requestDishes())
-		fetch(`https://randomuser.me/api/?results=20`)
+		// fetch(`https://randomuser.me/api/?results=20`)
+		fetch(`http://172.20.10.2:8099/dishes`)
 		.then(response => response.json())
 		.then(json => dispatch(requestDishesSuccess(mock)))
 		.catch((error) => {
