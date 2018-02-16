@@ -3,7 +3,7 @@
     {
       "id": "1",
       "ingredients": [{"amount":"2 tbsp", "ingredientName": "olive oil"},{"amount":"2","ingredientName":"onions"},{"amount":"1","ingredientName":"red or green pepper"},{"amount":"1-2","ingredientName":"red chillies"},{"amount":"400g","ingredientName":"tomatoes"},{"amount":"1-2 tsp","ingredientName":"sugar"},{"amount":"4","ingredientName":"eggs"}],
-      "healthLabels": ["Vegetarian","Gluten-free","Light"],
+      "healthLabels": ["Vegetarian","Gluten-free","Healthy"],
       "person": 4,
       "publicationDate": "2018-01-21T15:00:00.000000Z",
       "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201531_11.jpg?itok=QNKZ0YKw",
@@ -12,34 +12,98 @@
     },
     {
       "id": "2",
-      "ingredients": [{"amount":"2 tbsp", "ingredientName": "olive oil"},{"amount":"2","ingredientName":"onions"},{"amount":"1","ingredientName":"red or green pepper"},{"amount":"1-2","ingredientName":"red chillies"},{"amount":"400g","ingredientName":"tomatoes"},{"amount":"1-2 tsp","ingredientName":"sugar"},{"amount":"4","ingredientName":"eggs"}],
-      "healthLabels": ["Vegetarian","Gluten-free"],
-      "person": 4,
+      "ingredients": [{"amount": "4 tbsp", "ingredientName":"olive oil"},{"amount": "1", "ingredientName":"onion"},{"amount": "1", "ingredientName":"red chilli"},{"amount": "2cm", "ingredientName":"piece ginger"},{"amount": "½ tsp each", "ingredientName":"ground cumin, coriander and cinnamon"},{"amount": "400g", "ingredientName":"can chickpeas"},{"amount": "200g", "ingredientName":"tomatoes"},{"amount": "juice ½", "ingredientName":"lemon"},{"amount": "2", "ingredientName":"aubergines"}],
+      "healthLabels": ["Vegetarian","Easy","Healthy"],
+      "person": 2,
       "publicationDate": "2018-01-22T15:00:00.000000Z",
-      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201531_11.jpg?itok=QNKZ0YKw",
-      "name": "Menemen@",
-      "method": ["Heat the oil in a heavy-based frying pan. Stir in the onions, pepper and chillies. Cook until they begin to soften. Add the tomatoes and sugar, mixing well. Cook until the liquid has reduced, season.", "Using a wooden spoon, create 4 pockets in the tomato mixture and crack the eggs into them. Cover the pan and cook the eggs over a low heat until just set.","Beat the yogurt with the garlic and season. Sprinkle the menemen with parsley and serve from the frying pan with a dollop of the garlic-flavoured yogurt."]
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--219528_11.jpg?itok=FULbGu3f",
+      "name": "Grilled aubergines",
+      "method": ["Heat 2 tbsp oil in a pan, add the onion and fry until soft and lightly browned, about 10 mins. Add the chilli, ginger and spices and mix well. Stir in the chickpeas, tomatoes and 5 tbsp water, bring to the boil, then simmer for 10 mins. Add a little salt and pepper and the lemon juice.","Arrange the aubergines over a grill pan. Brush lightly with oil, sprinkle with salt and pepper, then grill until golden. Flip them over, brush again with oil, season and grill again until tender and golden.","Mix the yogurt with the garlic, most of the walnuts and coriander and a little salt and pepper. Arrange the aubergine slices over a warm platter and spoon over the chickpea mix. Drizzle with the walnut sauce and scatter with the remaining walnuts and coriander."]
     },
     {
       "id": "3",
-      "ingredients": [{"amount":"2 tbsp", "ingredientName": "olive oil"},{"amount":"2","ingredientName":"onions"},{"amount":"1","ingredientName":"red or green pepper"},{"amount":"1-2","ingredientName":"red chillies"},{"amount":"400g","ingredientName":"tomatoes"},{"amount":"1-2 tsp","ingredientName":"sugar"},{"amount":"4","ingredientName":"eggs"}],
-      "healthLabels": ["Vegetarian","Gluten-free"],
+      "ingredients": [{"amount": "2 medium", "ingredientName":"aubergines"},{"amount": "juice 1", "ingredientName":"lemon"},{"amount": "2-3", "ingredientName":"garlic cloves, crushed  "},{"amount": "150ml pot", "ingredientName":"thick yogurt"},{"amount": "small bunch", "ingredientName": "dill, leaves chopped"}],
+      "healthLabels": ["Vegetarian","Gluten-free","Easy","Healthy"],
       "person": 4,
       "publicationDate": "2018-01-23T15:00:00.000000Z",
-      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201531_11.jpg?itok=QNKZ0YKw",
-      "name": "Menemen!",
-      "method": ["Heat the oil in a heavy-based frying pan. Stir in the onions, pepper and chillies. Cook until they begin to soften. Add the tomatoes and sugar, mixing well. Cook until the liquid has reduced, season.", "Using a wooden spoon, create 4 pockets in the tomato mixture and crack the eggs into them. Cover the pan and cook the eggs over a low heat until just set.","Beat the yogurt with the garlic and season. Sprinkle the menemen with parsley and serve from the frying pan with a dollop of the garlic-flavoured yogurt."]
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1039_11.jpg?itok=x8RD93sK",
+      "name": "Smoked aubergine",
+      "method": ["Heat grill to very hot. Slice the aubergines in half lengthways, then grill for 25 mins, turning occasionally, until soft – the skin will remain firm, but the flesh will soften. Lift the aubergines off the grill and leave until cool enough to handle.","Using a sharp knife, score the grilled flesh and scoop out the flesh with a spoon. Tip into a bowl and mash with a fork until you get a thick pulp. Beat in the lemon juice and garlic. Add the yogurt and dill, and season. Serve while still warm."]
     },
     {
       "id": "4",
-      "ingredients": [{"amount":"2 tbsp", "ingredientName": "olive oil"},{"amount":"2","ingredientName":"onions"},{"amount":"1","ingredientName":"red or green pepper"},{"amount":"1-2","ingredientName":"red chillies"},{"amount":"400g","ingredientName":"tomatoes"},{"amount":"1-2 tsp","ingredientName":"sugar"},{"amount":"4","ingredientName":"eggs"}],
-      "healthLabels": ["Vegetarian","Gluten-free"],
-      "person": 4,
+      "ingredients": [{"amount": "1 ", "ingredientName":"leg of lamb"},{"amount": "1 ", "ingredientName":"lemon juice and zest"},{"amount": "1 ", "ingredientName":"orange juice and zest"},{"amount": "4 tbsp", "ingredientName":" olive oil"},{"amount": "2 tbsp", "ingredientName":" clear honey"},{"amount": "1 tbsp", "ingredientName":" cinnamon,"},{"amount": "1 tbsp", "ingredientName":" ground cumin,"},{"amount": "1 tbsp", "ingredientName":" fennelseeds, "},{"amount": "3 ", "ingredientName":"garlic cloves, crushed"}],
+      "healthLabels": ["Easy"],
+      "person": 6,
       "publicationDate": "2018-01-24T15:00:00.000000Z",
-      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1201531_11.jpg?itok=QNKZ0YKw",
-      "name": "Menemen!!",
-      "method": ["Heat the oil in a heavy-based frying pan. Stir in the onions, pepper and chillies. Cook until they begin to soften. Add the tomatoes and sugar, mixing well. Cook until the liquid has reduced, season.", "Using a wooden spoon, create 4 pockets in the tomato mixture and crack the eggs into them. Cover the pan and cook the eggs over a low heat until just set.","Beat the yogurt with the garlic and season. Sprinkle the menemen with parsley and serve from the frying pan with a dollop of the garlic-flavoured yogurt."]
-    }
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--523511_11.jpg?itok=n7NjOvn9",
+      "name": "Slow-roast lamb",
+      "method": ["Put the lamb into a large food bag with all the juice and marinate overnight.","The next day, take the lamb out of the fridge 1 hr before you want to cook it. Heat oven to 220C/200C fan/gas 7. Take the lamb out of the marinade (reserve remaining marinade) and pat dry. Rub with half the oil and roast for 15-20 mins until browned. Remove lamb and reduce oven to 160C/140C fan/gas 3.","Mix the zests, remaining oil, honey, spices and garlic with plenty of seasoning. Lay a large sheet of baking parchment on a large sheet of foil. Sit the lamb leg on top, rub all over with the paste and pull up the sides of the foil. Drizzle marinade into base, and scrunch foil to seal.","Roast for 4 hrs, until very tender. Rest, still wrapped, for 30 mins. Unwrap and serve with juices."]
+    },
+    {
+      "id": "5",
+      "ingredients": [{"amount":"135g pack", "ingredientName":"raspberry jelly"},{"amount":"500ml", "ingredientName":"double cream"},{"amount":"1 tsp", "ingredientName":"rosewater"},{"amount":"12", "ingredientName":"raspberries, halved"},{"amount":"drizzle of clear", "ingredientName":"honey"},{"amount":"small handful", "ingredientName":"mint leaves"},{"amount":"1 tbsp", "ingredientName":"pistachio, chopped"}],
+      "healthLabels": ["Easy"],
+      "person": 6,
+      "publicationDate": "2018-01-25T15:00:00.000000Z",
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1173673_10.jpg?itok=E8kSGwg-",
+      "name": "Rose cream & raspberry jellies",
+      "method": ["Boil a kettle. Break the jelly cubes into a jug, pour over 100ml boiling water and stir to dissolve. Gently warm the cream in a small pan, then remove from the heat and pour in the jelly mixture. Stir in the rose water, then tip the mixture back into your jug. Divide the jelly between 6 small glasses and chill for 2 hrs or until set. Can be made 1 day ahead.","Remove the jellies from the fridge about 20 mins before serving. Divide the raspberries between them, then add a drizzle of honey, a few mint leaves and a sprinkling of pistachios to each."]
+    },
 
+    {
+      "id": "6",
+      "ingredients": [{"amount":"small handful ", "ingredientName": "pine nuts or flaked almonds"}, {"amount":"1 tbsp ", "ingredientName": "olive oil"}, {"amount":"1 large ", "ingredientName": "onion, halved and sliced"}, {"amount":"2 ", "ingredientName": "cinnamon sticks, broken in half"}, {"amount":"500g ", "ingredientName": "lean lamb neck fillet, cubed"}, {"amount":"250g ", "ingredientName": "basmati rice"}, {"amount":"1 ", "ingredientName": "lamb or vegetable stock cube"}, {"amount":"12 ", "ingredientName": "ready-to-eat dried apricots"}, {"amount":"handful", "ingredientName": " fresh mint leaves, roughly chopped"}],
+      "healthLabels": ["Easy"],
+      "person": 4,
+      "publicationDate": "2018-01-26T15:00:00.000000Z",
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1069491_11.jpg?itok=bILjdz8R",
+      "name": "Turkish lamb pilau",
+      "method": ["Dry-fry the pine nuts or almonds in a large pan until lightly toasted, then tip onto a plate. Add the oil to the pan, then fry the onion and cinnamon together until starting to turn golden. Turn up the heat, stir in the lamb, fry until the meat changes colour, then tip in the rice and cook for 1 min, stirring all the time.","Pour in 500ml boiling water, crumble in the stock cube, add the apricots, then season to taste. Turn the heat down, cover and simmer for 12 mins until the rice is tender and the stock has been absorbed. Toss in the pine nuts and mint and serve."]
+    },
+
+    {
+      "id": "7",
+      "ingredients": [{"amount":"6 ","ingredientName":"boneless, skinless chicken thighs"},{"amount":"2 tbsp ","ingredientName":"olive oil"},{"amount":"1 tsp ","ingredientName":"fennel seed, crushed"},{"amount":"1 tsp ","ingredientName":"ground cumin"},{"amount":"1 tsp ","ingredientName":"sweet smoked paprika"},{"amount":"1 ","ingredientName":"garlic clove, crushed"},{"amount":"1 tsp ","ingredientName":"red wine vinegar"}],
+      "healthLabels": ["Easy"],
+      "person": "6-8",
+      "publicationDate": "2018-01-27T15:00:00.000000Z",
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--954475_11.jpg?itok=Bwaen5vx",
+      "name": "Smoky chicken skewers",
+      "method": ["You need 15 skewers: if wooden, soak in water for 10 mins. Cut chicken into 3cm pieces and place in a bowl. Add 1 tbsp olive oil, the spices, garlic and vinegar, toss well and season. You can do this up to a day before and refrigerate.","Thread 2-3 pieces on each skewer. Pour remaining oil in a frying pan or rub onto a griddle pan. Get the pan hot and sear the chicken for 3-4 mins on each side – you may have to do this in batches, keeping the cooked skewers warm in a low oven. Serve with smoky aïoli if you like."]
+    },
+
+    {
+      "id": "8",
+      "ingredients": [{"amount": "4 ","ingredientName":"lamb leg steaks"},{"amount": "2 tsp ","ingredientName":"seasoning "},{"amount": "1 tsp ","ingredientName":"dried oregano"},{"amount": "small bunch ","ingredientName":"mint, leaves only, chopped"},{"amount": "2 x 150g","ingredientName":" tubs low-fat plain yogurt"},{"amount": "4 ","ingredientName":"pitta breads, white or wholemeal"},{"amount": "½ ","ingredientName":"iceberg lettuce, shredded"},{"amount": "1 ","ingredientName":"red onion, thinly sliced"},{"amount": "1 ","ingredientName":"lemon, cut into wedges for squeezing"}],
+      "healthLabels": ["Easy"],
+      "person": "4",
+      "publicationDate": "2018-01-28T15:00:00.000000Z",
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--7172_11.jpg?itok=YLFCtY2W",
+      "name": "Turkish-style lamb",
+      "method": ["Heat grill to high. Season the lamb, then grill for 2 mins on each side until browned, but still very rare. Meanwhile, mix the seasoning, oregano and half of the mint into one of the tubs of yogurt, smother this over the lamb, then return to the grill for another 2-3 mins or until the yogurt is blistered and the meat is cooked to your liking.","Leave the meat to rest on a board for a few mins while you toast the pittas, shred the lettuce and thinly slice the red onion. Stir the rest of the mint into the second tub of yogurt. Thickly slice the meat and stuff into the pitta bread with the salad and minted yogurt. Squeeze over lemon juice before tucking in, if you like."]
+    },
+    {
+      "id": "9",
+      "ingredients": [
+        {"amount":"2 tbsp ","ingredientName":"olive oil"},
+        {"amount":"2 ","ingredientName":"red onions, very finely chopped"},
+        {"amount":"4 ","ingredientName":"garlic cloves, crushed"},
+        {"amount":"2 tsp","ingredientName":" ground cumin"},
+        {"amount":"2 tsp","ingredientName":" coriander"},
+        {"amount":"400g ","ingredientName":"can chopped tomatoes"},
+        {"amount":"½ tsp ","ingredientName":"sugar"},
+        {"amount":"½ 20g ","ingredientName":"pack mint, finely chopped"},
+        {"amount":"500g ","ingredientName":"pack lean lamb mince"},
+        {"amount":"8 ","ingredientName":"dried apricots, finely chopped"},
+        {"amount":"50g ","ingredientName":"fresh breadcrumbs"}
+      ],
+      "healthLabels": ["Easy"],
+      "person": "4",
+      "publicationDate": "2018-01-29T15:00:00.000000Z",
+      "image": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--350457_11.jpg?itok=DykIqCcK",
+      "name": "Lamb & apricot meatballs",
+      "method": ["Heat 2 tsp oil in a pan and soften the onions for 5 mins. Add the garlic and spices and cook for a few mins more. Spoon half the onion mixture into a bowl and set aside to cool. Add the tomatoes, sugar and seasoning to the remaining onions in the pan and simmer for about 10 mins until reduced.","Meanwhile, add the mint, lamb, apricots and breadcrumbs to the cooled onions, season and mix well with your hands. Shape into little meatballs","Heat the rest of the oil in a non-stick pan and fry the meatballs until golden (in batches if you need to). Stir in the sauce with a splash of water and gently cook everything for a few mins until the meatballs are cooked through. Serve with pitta bread and salad."]
+    }
   ]
 }
