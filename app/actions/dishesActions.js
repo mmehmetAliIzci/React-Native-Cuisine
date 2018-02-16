@@ -3,6 +3,8 @@
  */
 
 import {REQUEST_DISHES,REQUEST_DISHES_SUCCESS,REQUEST_DISHES_FAILURE,SELECT_DISH, UPDATE_FILTERED_LIST} from '../constants/actionTypes';
+import {ROOT_URL} from '../constants/appConstants';
+
 import mock from '../mock.json'
 export const requestDishes = () => ({
 	type: REQUEST_DISHES
@@ -32,7 +34,7 @@ export function fetchDishes (){
 	return (dispatch) => {
 		dispatch(requestDishes())
 		// fetch(`https://randomuser.me/api/?results=20`)
-		fetch(`http://172.20.10.2:8099/dishes`)
+		fetch(ROOT_URL+":8099/dishes")
 		.then(response => response.json())
 		.then(json => dispatch(requestDishesSuccess(mock)))
 		.catch((error) => {
